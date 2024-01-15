@@ -85,7 +85,8 @@
         now open comment out and set it to your site name <test.example.com>
     8. pm2 restart <process ID>
     9. sudo systemctl restart nginx.service
-    10. Your server is running with the url/site name you specified
+    10. Before adding the site name please update your DNS in your domain provider, and wait for some time
+    11. Your server is running with the url/site name you specified
 
 # Step11: Configure certbot and setup HTTPS conenction
 

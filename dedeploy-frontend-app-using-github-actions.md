@@ -33,4 +33,3 @@ node-version: [18.x]
         run: aws s3 cp dist/ ${{vars.AWS_S3_LOCATION_PROD}} --recursive
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id ${{vars.AWS_CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"
-

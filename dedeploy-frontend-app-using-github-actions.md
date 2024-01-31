@@ -1,16 +1,16 @@
 # deploy.yml file setup and meaning of the following statements:
 
-    name: Build image and trigger superrepo update                             //give a name to your deployment
+    name: Build image and trigger superrepo update                           // give a name to your deployment
     
     on:
       push:
         branches: 
-            - 'main'                                                          // this is the branch, where if anything get pushed then the deploy.yml file will trigger and automatic deployment process will start 
+            - 'main'                                                        // this is the branch, where if anything get pushed then the deploy.yml file will trigger and automatic deployment process will start 
     
     jobs:
-      build:                                                                 // here we mention which os are we using, what is the version of it 
+      build:                                                                // here we mention which os are we using, what is the version of it 
          runs-on: ubuntu-latest  
-         strategy:                                                           // under strategy we mention the node version we want to use 
+         strategy:                                                          // under strategy we mention the node version we want to use 
              matrix:
                  node-version: [18.x]
 

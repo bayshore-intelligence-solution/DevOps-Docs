@@ -37,7 +37,21 @@
             // add cloudfront_distribution_id in github variables
              run: aws cloudfront create-invalidation --distribution-id ${{vars.AWS_CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"     // this command creates the cloudfront invalidation " /* " means remove all caches
 # Where to set secrets and variables
+# Note : Please keep all importaint key and values as Secrets (Those things you do not want to share with anyone, i.e. sensitive data or information)
     1. Go to your reposotory
     2. Click on the settings tab
     3. There you find a Secrets and Variables folder
+    4. Go to Actions option
+    5. Create a new Repository Secret
+    6. Give it a name (ex: AWS_ACCESS_KEY_ID) and set the value of it
+    7. Go to valiables tab 
+    8. Create a new Repository Variable
+    9. Give it a name (ex: AWS_S3_LOCATION_PROD) and set the value of it
+    10. S3 bucket location : Make sure to add your s3 bucket location in this format (Ex: s3://<your s3 bucket name>)
+    11. That's all you need to do, for deploy a node app front-end with the help of github actions
+    12. Thank You!
 ![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/ecff4277-6d9f-49f6-8d7b-8c963b841aae)
+![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/af1454dd-b20c-429d-8eca-f4fb03aa552d)
+![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/298a4432-a83f-4c02-8b58-5e78f251d57c)
+![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/fe76cca9-35c1-4e2c-b270-dc1a64dd4376)
+![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/88ee0e8d-4e21-4c8e-831d-532f78b8fd24)

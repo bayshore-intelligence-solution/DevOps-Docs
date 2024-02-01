@@ -36,3 +36,8 @@
            - name: Invalidate CloudFront cache                              // need to invalidate cloudfront caches
             // add cloudfront_distribution_id in github variables
              run: aws cloudfront create-invalidation --distribution-id ${{vars.AWS_CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"     // this command creates the cloudfront invalidation " /* " means remove all caches
+# Where to set secrets and variables
+    1. Go to your reposotory
+    2. Click on the settings tab
+    3. There you find a Secrets and Variables folder
+![image](https://github.com/bayshore-intelligence-solution/DevOps-Docs/assets/143008309/ecff4277-6d9f-49f6-8d7b-8c963b841aae)

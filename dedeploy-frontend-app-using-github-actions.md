@@ -45,10 +45,10 @@
     3. There you find a Secrets and Variables folder
     4. Go to Actions option
     5. Create a new Repository Secret
-    6. Give it a name (ex: AWS_ACCESS_KEY_ID) and set the value of it
+    6. Give it a name and set the value of it
     7. Go to valiables tab 
     8. Create a new Repository Variable
-    9. Give it a name (ex: AWS_S3_LOCATION_PROD) and set the value of it
+    9. Give it a name and set the value of it
     10. S3 bucket location : Make sure to add your s3 bucket location in this format (Ex: s3://<your s3 bucket name>)
     11. That's all you need to do, for deploy a node app front-end with the help of github actions
     12. Thank You!
